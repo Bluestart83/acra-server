@@ -13,7 +13,10 @@ A server to collect crash data of your android applications
 ## Demo
 
 There is a demo server running (with very few crashes halas, we are looking for crash data to feed this DB): http://acra-server-demo.marvinlabs.com/dashboard
- 
+
+## Using with acra
+Report Url: http://www.yourdomain.com/crash/add
+
 ## Installation
 
 The app can be installed on your server using two methods: 
@@ -56,7 +59,7 @@ This app is nothing more than a regular Symfony bundle and can be installed as s
     
 // Create the DB tables
 
-    php app/console doctrine:schema:create --env=prod
+    php app/console doctrine:schema:update --force --env=prod
     
 // Prepare the CSS and JS
 
